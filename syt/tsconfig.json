@@ -9,9 +9,14 @@
     }
   ],
   "compilerOptions": {
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": [
+        "src/*"
+      ]
     }
-  }
+  },
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
 }
